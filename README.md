@@ -5,6 +5,11 @@ Open-source control software for the [Embrava
 Blynclight Standard](https://www.embrava.com/products/blynclight-standard) IM
 status indicator.
 
+Device identified by :
+
+    USB VID:0x2C0D 
+        PID:0x000C
+
 Getting Started
 ---------------
 Install dependencies:
