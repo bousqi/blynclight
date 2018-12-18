@@ -2,7 +2,7 @@ Blynclight
 ==========
 
 Open-source control software for the [Embrava
-Blynclight](http://www.embrava.com/products/blync-light?variant=328886579) IM
+Blynclight Standard](https://www.embrava.com/products/blynclight-standard) IM
 status indicator.
 
 Getting Started
@@ -37,3 +37,8 @@ Commands
 * `pulse`: Pulse a specific color
 
 Run with `--help` for more details.
+
+
+USB Protocol 
+------------
+More details on USB protocol command in [USB_COMMANDS.txt](USB_COMMANDS.txt)

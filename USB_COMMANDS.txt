@@ -1,0 +1,19 @@
+// 0 means off, 255 max
+uint8_t red;
+uint8_t blue;
+uint8_t green;
+
+// bitfield for attributes
+uint8_t :1;				// MSB
+uint8_t :1;
+uint8_t flash_h:1;		// Fast speed flashing
+uint8_t flash_m:1;		// Medium speed flashing
+
+uint8_t flash_l:1;		// Low speed flashing
+uint8_t flash_en:1;		// Flashing Enable/Disable
+uint8_t dim:1;			// Dim light (soft light)
+uint8_t enable:1;		// Enable/Disable light 
+						// LSB
+
+uint16_t reserved = 0x0000;
+uint16_t EOC = 0xFF22;

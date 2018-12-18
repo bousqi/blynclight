@@ -170,8 +170,8 @@ class BlynclightNotFound(Exception):
 	pass
 
 class Blynclight(object):
-	BLYNCLIGHT_VENDOR  = 0x0e53
-	BLYNCLIGHT_PRODUCT = 0x2516
+	BLYNCLIGHT_VENDOR  = 0x2c0d
+	BLYNCLIGHT_PRODUCT = 0x000c
 
 	def __init__(self, verbose=False):
 		"""Constructor"""
@@ -195,7 +195,7 @@ class Blynclight(object):
 		r = int(max(0, min(color.r, 255)))
 		b = int(max(0, min(color.b, 255)))
 		g = int(max(0, min(color.g, 255)))
-		d = (r, b, g, 0x00, 0x00, 0x00, 0xff, 0xff)
+		d = (r, b, g, 0x00, 0x00, 0x00, 0xff, 0x22)
 		self.dev.ctrl_transfer(0x21, 0x9, 0x0200, 0, d, 0)
 		if self._verbose: print(r,b,g)
 		self._color = color
